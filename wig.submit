@@ -1,0 +1,8 @@
+executable = wig.sh
+arguments  = /home/glbrc.org/mplace/data/RNA-seq/sang_jin_kim/Analysis/map $(sample_name) /home/glbrc.org/mplace/data/RNA-seq/sang_jin_kim/Analysis/BigWigs
+log        = logs/$(sample_name).wig.log
+output     = logs/$(sample_name).wig.out
+error      = logs/$(sample_name).wig.err
+request_cpus = 8
+request_memory = 16GB
+queue sample_name from ../sample_list.txt

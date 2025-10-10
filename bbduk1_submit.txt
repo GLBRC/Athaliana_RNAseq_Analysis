@@ -1,0 +1,8 @@
+universe = vanilla
+getenv   = true
+executable = bbduk.sh
+arguments = $(read1) $(read2)
+log = trim.log
+error = trim.err
+request_memory = 8G
+queue read1 read2 from fastq_files.txt

@@ -1,0 +1,7 @@
+executable = count.sh
+log        = logs/all.count.log
+output     = logs/all.count.out
+error      = logs/all.count.err
+request_cpus = 32
+request_memory = 32GB
+queue

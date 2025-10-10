@@ -1,0 +1,8 @@
+executable = map.sh
+arguments  = /mnt/bigdata/linuxhome/mplace/data/RNA-seq/sang_jin_kim/Analysis/trim $(sample_name) /home/glbrc.org/mplace/data/RNA-seq/sang_jin_kim/Analysis /mnt/bigdata/linuxhome/mplace/data/RNA-seq/sang_jin_kim/Reference/Athaliana_167/Athaliana_167_index Athaliana_167_fa  Athaliana_167_gene
+log        = logs/$(sample_name).map.log
+output     = logs/$(sample_name).map.out
+error      = logs/$(sample_name).map.err
+request_cpus = 32
+request_memory = 32GB
+queue sample_name from sample_list.txt
